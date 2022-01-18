@@ -2,23 +2,22 @@
   <q-layout view="hHh lpR fFf">
 
     <q-header reveal elevated class="bg-primary text-white" height-hint="98">
-      <q-toolbar>
-        <!-- <q-toolbar-title align="center" class="q-pa-lg text-h5 text-weight-bold">
-          The Weekly Message
-        </q-toolbar-title> -->
-      </q-toolbar>
+         <q-tabs
+          v-model="tab"
+          class="text-white q-mt-sm"
+          inline-label
+          align="justify"
+          mobile-arrows
+          indicator-color="accent"
+          stretch
+          dense
+        >
+          <q-route-tab name="mails" icon="fas fa-home" no-caps label="Home" to="/" />
+          <q-route-tab name="alarms" icon="fas fa-address-card" no-caps label="About" to="/about" />
+          <q-route-tab name="movies" icon="fas fa-archive" no-caps label="Archive" to="/archive" />
+          <q-route-tab name="subscribe" icon="fas fa-plus-square" no-caps label="Subscribe" to="/subscribe"/>
+        </q-tabs>
 
-      <q-tabs align="center">
-        <q-route-tab class="q-px-md lt-sm" to="/" label="Home" />
-        <q-route-tab class="q-px-md lt-sm" to="/about" label="About" />
-        <q-route-tab class="q-px-md lt-sm" to="/archive" label="Archive" />
-        <q-route-tab class="q-px-md lt-sm" to="/subscribe" label="Subscribe" />
-
-        <q-route-tab class="q-px-xl gt-xs" to="/" label="Home" />
-        <q-route-tab class="q-px-xl gt-xs" to="/about" label="About" />
-        <q-route-tab class="q-px-xl gt-xs" to="/archive" label="Archive" />
-        <q-route-tab class="q-px-xl gt-xs" to="/subscribe" label="Subscribe" />
-      </q-tabs>
     </q-header>
 
     <q-page-container>
