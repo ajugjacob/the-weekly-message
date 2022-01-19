@@ -4,7 +4,7 @@
     <q-header reveal elevated class="bg-primary text-white" height-hint="98">
          <q-tabs
           v-model="tab"
-          class="text-white q-mt-sm"
+          class="text-white q-pt-md"
           inline-label
           align="justify"
           mobile-arrows
@@ -12,10 +12,10 @@
           stretch
           dense
         >
-          <q-route-tab name="mails" icon="fas fa-home" no-caps label="Home" to="/" />
-          <q-route-tab name="alarms" icon="fas fa-address-card" no-caps label="About" to="/about" />
-          <q-route-tab name="movies" icon="fas fa-archive" no-caps label="Archive" to="/archive" />
-          <q-route-tab name="subscribe" icon="fas fa-plus-square" no-caps label="Subscribe" to="/subscribe"/>
+          <q-route-tab name="mails" icon="fas fa-home" no-caps label="Home" class="q-pb-sm" to="/" />
+          <q-route-tab name="alarms" icon="fas fa-address-card" no-caps label="About" class="q-pb-sm" to="/about" />
+          <q-route-tab name="movies" icon="fas fa-archive" no-caps label="Archive" class="q-pb-sm" to="/archive" />
+          <q-route-tab name="subscribe" icon="fas fa-plus-square" no-caps label="Subscribe" class="q-pb-sm" to="/subscribe"/>
         </q-tabs>
 
     </q-header>

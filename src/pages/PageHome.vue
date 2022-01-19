@@ -1,13 +1,14 @@
 <template>
-  <div class="q-pa-md">
-    
-  </div>
+  <q-page class="q-px-lg">
+    <h5>Home</h5>
+  </q-page>
 </template>
 
 <script>
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'PageIndex'
+  name: 'PageHome'
 })
+
 </script>
