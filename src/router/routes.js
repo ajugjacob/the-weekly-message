@@ -7,7 +7,7 @@ const routes = [
       { path: '', component: () => import('src/pages/PageHome.vue') },
       { path: '/about', component: () => import('src/pages/PageAbout.vue') },
       { path: '/archive', component: () => import('src/pages/PageArchive.vue') },
-      { path: '/subscibe', component: () => import('src/pages/PageSubscribe.vue') }
+      { path: '/subscribe', component: () => import('src/pages/PageSubscribe.vue') }
       
     ]
   },
